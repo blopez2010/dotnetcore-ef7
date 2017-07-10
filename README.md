@@ -63,6 +63,6 @@ GO and use the model!!
 
 ## Changing the model
 
-* If you make changes to your model, you can use the dotnet ef migrations add command to scaffold a new migration to make the corresponding schema changes to the database. Once you have checked the scaffolded code (and made any required changes), you can use the dotnet ef database update command to apply the changes to the database.
-* EF uses a __EFMigrationsHistory table in the database to keep track of which migrations have already been applied to the database.
+* If you make changes to your model, you can use the `dotnet ef migrations add` command to scaffold a new migration to make the corresponding schema changes to the database. Once you have checked the scaffolded code (and made any required changes), you can use the `dotnet ef database update` command to apply the changes to the database.
+* EF uses a `__EFMigrationsHistory` table in the database to keep track of which migrations have already been applied to the database.
 * SQLite does not support all migrations (schema changes) due to limitations in SQLite. See SQLite Limitations. For new development, consider dropping the database and creating a new one rather than using migrations when your model changes.
